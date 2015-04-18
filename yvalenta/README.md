@@ -24,4 +24,4 @@ Han entrado: 1 ve(z)(ces)
 > y se ve reflejada el mensaje en el socket abierto por el cliente
 > The server has closed the connection. Bye!
 
-A image: ![logo Markdown Here](https://files.slack.com/files-pri/T045BDSFS-F04FC4DAF/simple-server-example.png)
+A image: ![Example](http://files.slack.com/files-pri/T045BDSFS-F04FC4DAF/simple-server-example.png)
