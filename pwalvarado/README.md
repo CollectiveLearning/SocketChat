@@ -40,30 +40,30 @@ know how to use the standard Sockets class to build both client and server appli
 
 To try things out, you’ll need three or more windows. In window 1, start up server chat ``ruby server.rb <ip> <port>``:
 
-  $ ruby server.rb "localhost" 3300
+        $ ruby server.rb "localhost" 3300
 
 Then, in window 2 and 3, connect to server ``ruby client.rb <ip> <port>``, enter a nickname, wait for others enter to chat room, then chat!
 
 Window 2
 
-  $ ruby client.rb "localhost" 3300
-  Enter the username:
-  carlinno
-  Connection established, Thank you for joining! Happy chatting
-  Hi
-  peter: Hello
+      $ ruby client.rb "localhost" 3300
+      Enter the username:
+      carlinno
+      Connection established, Thank you for joining! Happy chatting
+      Hi
+      peter: Hello
 
 Window 3
 
-  $ ruby client.rb "localhost" 3300
-  Enter the username:
-  carlinno
-  Connection established, Thank you for joining! Happy chatting
-  Hi
-  peter: Hello
+      $ ruby client.rb "localhost" 3300
+      Enter the username:
+      carlinno
+      Connection established, Thank you for joining! Happy chatting
+      Hi
+      peter: Hello
 
 In window 1, you will see:
 
-  $ ruby server.rb "localhost" 3300
-  peter #<TCPSocket:0x0000000091d228>
-  carlinno #<TCPSocket:0x0000000091ccb0>
+      $ ruby server.rb "localhost" 3300
+      peter #<TCPSocket:0x0000000091d228>
+      carlinno #<TCPSocket:0x0000000091ccb0>
