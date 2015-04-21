@@ -25,7 +25,7 @@ class Client
     @request = Thread.new do
       loop do
         msg = $stdin.gets.chomp
-        @server.puts( msg )
+        @server.puts(msg)
       end
     end
   end
