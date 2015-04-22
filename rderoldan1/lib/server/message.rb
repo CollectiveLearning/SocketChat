@@ -2,6 +2,7 @@ require 'active_support/all'
 class Message
 
   CODES = %w(100 101 102 200 201 300)
+
   attr_accessor :code, :message
   def initialize(attributes)
     attributes.each do |key, value|
