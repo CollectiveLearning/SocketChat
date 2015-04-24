@@ -4,4 +4,5 @@ machine:
 
 test:
   post:
-    - rspec rderoldan1
+    - cd rderoldan1 && bundle install
+    - cd rderoldan1 && bundle exec rspec
