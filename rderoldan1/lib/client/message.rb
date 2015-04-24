@@ -27,7 +27,6 @@ class Message
       case
         when msg =~ /\/help(.*)/ then 300
         when msg =~ /\/list(.*)/ then 102
-
         else
           200
     end
