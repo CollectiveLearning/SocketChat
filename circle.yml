@@ -1,6 +1,6 @@
 machine:
  ruby:
-   version: 2.2.0test:
+   version: 2.2.0
  post:
    - cd yvalenta && bundle install
-   - cd yvalenta && bundle exec rspec 
+   - cd yvalenta && bundle exec rspec
