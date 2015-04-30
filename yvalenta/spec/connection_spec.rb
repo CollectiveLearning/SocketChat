@@ -12,7 +12,7 @@ describe "Connection" do
 
     it "must add a new connection to connections hash" do
       previous_count = connection.all.count
-      id = connection.add(5)
+      connection.add(5)
       expect(connection.all.count).to be > previous_count
     end
   end
@@ -39,7 +39,6 @@ describe "Connection" do
     end
 
     it "calls destoy with an id" do
-
       id = connection.add(5)
       expect(connection).to receive(:destroy).with(id)
       connection.destroy(id)
