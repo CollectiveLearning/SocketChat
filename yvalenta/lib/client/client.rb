@@ -1,7 +1,6 @@
-require 'socket'
+require "socket"
 
 class Client
-
   attr_accessor :address, :port
 
   def initialize(address, port)
@@ -11,7 +10,7 @@ class Client
 
   def run
     threads = [Thread.new { read }, Thread.new { write }]
-    threads.each { |t| t.join}
+    threads.each(&:join)
   end
 
   def read
