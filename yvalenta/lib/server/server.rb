@@ -1,8 +1,7 @@
-require 'socket'
-require_relative 'connection'
+require "socket"
+require_relative "connection"
 
 class Server
-
   attr_accessor :port
 
   def initialize(port)
@@ -11,7 +10,7 @@ class Server
 
   def run
     puts "Start server"
-    Socket.tcp_server_loop(port) do |sock, client_addrinfo|
+    Socket.tcp_server_loop(port) do |sock, _client_addrinfo|
       Thread.new do
         begin
           id = connections.add(sock)
@@ -32,7 +31,7 @@ class Server
     while not sock.eof?
       msg = sock.gets
       log "#{id}: #{msg}"
-      connections.all_except(id).each { |x, s| s.puts("#{id}: #{msg}") }
+      connections.all_except(id).each { |_x, s| s.puts("#{id}: #{msg}") }
     end
   end
 

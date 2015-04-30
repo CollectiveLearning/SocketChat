@@ -1,4 +1,4 @@
-require 'securerandom'
+require "securerandom"
 
 class Connection
   attr_accessor :connections
