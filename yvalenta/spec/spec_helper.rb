@@ -1,8 +1,8 @@
-require 'rspec'
+require "rspec"
 
-require_relative '../lib/client/client'
-require_relative '../lib/server/server'
-require_relative '../lib/server/connection'
+require_relative "../lib/client/client"
+require_relative "../lib/server/server"
+require_relative "../lib/server/connection"
 
 
 RSpec.configure do |config|
