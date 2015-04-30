@@ -71,7 +71,7 @@ describe "Connection" do
 
   describe "#generate_key" do
     it "must return a UUID key" do
-      expect(connection.generate_key).to  match(regex)
+      expect(connection.generate_key).to match(regex)
     end
   end
 end
